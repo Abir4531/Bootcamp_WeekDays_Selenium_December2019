@@ -1,5 +1,6 @@
 package common;
 
+import com.google.gson.internal.bind.util.ISO8601Utils;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
@@ -84,7 +85,7 @@ public class WebAPI {
         if (result.getStatus() == ITestResult.FAILURE) {
             captureScreenshot(driver, result.getName());
         }
-      //  driver.quit();
+        driver.quit();
     }
 
     @AfterSuite
@@ -109,7 +110,7 @@ public class WebAPI {
     @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false") String cloudEnvName,
                       @Optional("OS X") String os, @Optional("10") String os_version, @Optional("chrome-options") String browserName, @Optional("34")
-                              String browserVersion, @Optional("https://jqueryui.com/") String url) throws IOException {
+                              String browserVersion, @Optional("https://learn.letskodeit.com//") String url) throws IOException {
         //System.setProperty("webdriver.chrome.driver", "/Users/peoplentech/eclipse-workspace-March2018/SeleniumProject1/driver/chromedriver");
         if (useCloudEnv == true) {
             if (cloudEnvName.equalsIgnoreCase("browserstack")) {
@@ -126,12 +127,12 @@ public class WebAPI {
         driver.manage().window().maximize();
     }
 
-    public WebDriver getLocalDriver(   @Optional("mac")    String OS, String browserName) {
+    public WebDriver getLocalDriver(   @Optional("windows")    String OS, String browserName) {
         if (browserName.equalsIgnoreCase("chrome")) {
             if (OS.equalsIgnoreCase("OS X")) {
-                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
-            } else if (OS.equalsIgnoreCase("Windows")) {
                 System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/Windows/chromedriver.exe");
+            } else if (OS.equalsIgnoreCase("Windows")) {
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\abirh\\IdeaProjects\\Bootcamp_WeekDays_Selenium_December2019\\Generic\\BrowserDriver\\Windows\\chromedriver.exe");
             }
             driver = new ChromeDriver();
         }
@@ -141,7 +142,7 @@ public class WebAPI {
             if (OS.equalsIgnoreCase("OS X")) {
                 System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/Windows/chromedriver.exe");
             } else if (OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.chrome.driver", "/Generic/BrowserDriver/Windows/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/Windows/chromedriver.exe");
             }
             driver = new ChromeDriver(options);
         } else if (browserName.equalsIgnoreCase("firefox")) {
@@ -183,7 +184,6 @@ public class WebAPI {
     public void cleanUp() {
         //driver.close();
         driver.quit();
-
     }
 
     //helper methods
@@ -253,7 +253,7 @@ public class WebAPI {
         driver.findElement(By.id(locator)).clear();
     }
 
-    public void navigateBack() {
+    public static void navigateBack() {
         driver.navigate().back();
     }
 
@@ -366,9 +366,16 @@ public class WebAPI {
         return list;
     }
 
-    public List<WebElement> getListOfWebElementsByXpath(String locator) {
-        List<WebElement> list = new ArrayList<WebElement>();
+
+    public static List<WebElement> getListOfWebElementsByXpath(String locator) {
+        List<WebElement> list = new ArrayList<>();
+        List<String > element =new ArrayList<>();
         list = driver.findElements(By.xpath(locator));
+        for (int i=0; i<list.size(); i++){
+            element.add(list.get(i).getText());
+        }
+        System.out.println("+++++++++++++++++++");
+        System.out.println(element);
         return list;
     }
 
@@ -386,7 +393,7 @@ public class WebAPI {
         return st;
     }
 
-    public static String getTextByXpath(String locator) {
+    public String getTextByXpath(String locator) {
         String st = driver.findElement(By.xpath(locator)).getText();
         return st;
     }
@@ -417,7 +424,7 @@ public class WebAPI {
         Thread.sleep(sec * 1000);
     }
 
-    public void mouseHoverByCSS(String locator) {
+    public static void mouseHoverByCSS(String locator) {
         try {
             WebElement element = driver.findElement(By.cssSelector(locator));
             Actions action = new Actions(driver);
@@ -427,12 +434,15 @@ public class WebAPI {
             WebElement element = driver.findElement(By.cssSelector(locator));
             Actions action = new Actions(driver);
             action.moveToElement(element).perform();
+
         }
+
     }
-    public static void mouseHoverByXpath(String locator) {
+
+    public  static void mouseHoverByXpath(String locator) {
         try {
-            Actions action = new Actions(driver);
             WebElement element = driver.findElement(By.xpath(locator));
+            Actions action = new Actions(driver);
             Actions hover = action.moveToElement(element);
             hover.perform();
         } catch (Exception ex) {
@@ -446,22 +456,22 @@ public class WebAPI {
     }
 
     //handling Alert
-    public void okAlert() {
+    public static void okAlert() {
         Alert alert = driver.switchTo().alert();
         alert.accept();
     }
 
-    public void cancelAlert() {
+    public static void cancelAlert() {
         Alert alert = driver.switchTo().alert();
         alert.dismiss();
     }
 
     //iFrame Handle
-    public static void iframeHandle(WebElement element) {
+    public void iframeHandle(WebElement element) {
         driver.switchTo().frame(element);
     }
 
-    public void goBackToHomeWindow() {
+    public static void goBackToHomeWindow() {
         driver.switchTo().defaultContent();
     }
 
@@ -471,7 +481,7 @@ public class WebAPI {
     }
 
     //Taking Screen shots
-    public void takeScreenShot() throws IOException {
+    public static void takeScreenShot() throws IOException {
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         //FileUtils.copyFile(file, new File("screenShots.png"));
     }
@@ -482,12 +492,12 @@ public class WebAPI {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
-    public static void waitUntilVisible(By locator) {
+    public void waitUntilVisible(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    public static void waitUntilSelectable(By locator) {
+    public void waitUntilSelectable(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         boolean element = wait.until(ExpectedConditions.elementToBeSelected(locator));
     }
@@ -570,7 +580,7 @@ public class WebAPI {
         }
     }
 
-    public static void inputValueInTextBoxByWebElement(WebElement webElement, String value) {
+    public void inputValueInTextBoxByWebElement(WebElement webElement, String value) {
 
         webElement.sendKeys(value + Keys.ENTER);
 
@@ -579,35 +589,56 @@ public class WebAPI {
     public void clearInputBox(WebElement webElement) {
         webElement.clear();
     }
-    public String getTextByWebElement(WebElement webElement) {
+    public static String getTextByWebElement(WebElement webElement) {
         String text = webElement.getText();
         return text;
     }
 
-    // For Scroll down or up.
-    public static void scrollUpDown(int scroll){
-        JavascriptExecutor Scroll = (JavascriptExecutor) driver;
-        Scroll.executeScript("window.scrollBy(0,"+scroll+")");
+
+    public static void scrollUpDown(int scrollValue){
+        JavascriptExecutor scroll=(JavascriptExecutor) driver;
+        scroll.executeScript("window.scrollBy(0,"+scrollValue+")");
+
     }
+    public static void scrollToFooter(){
+        ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    }
+
+
+    //((JavascriptExecutor) driver).executeScript("window.open('about:blank','_blank');");
 
     public static void assertCheck(String actual,String expected){
-        Assert.assertEquals(actual,expected);
-        System.out.println("Tested Passed");
+            Assert.assertEquals(actual,expected);
+            System.out.println("Test Passed");
+    }
+    public static void assertValidate(String actual,String expected){
+            Assert.assertEquals(actual,expected);
+            System.out.println("Test Passed");
     }
 
-    //Radio Button
-    public static void radioButton(String radioButton){
-        WebElement radio = driver.findElement(By.xpath(radioButton));
-        radio.click();
+    public static void scrollToWebElement(String path){
+        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();",
+                driver.findElement(By.xpath(path)));
+    }
 
+    //Select From single Menu
+    public static void selectFromDrop(String locator1, String locator2){
+        WebElement element = driver.findElement(By.xpath(locator1));
+        Select drpWrd = new Select(element);
+        drpWrd.selectByValue(locator2);
     }
-    //Check Box
-    public void checkBox(String selectCheckBox) {
-        WebElement checkBoxSelect = driver.findElement(By.xpath(selectCheckBox));
-        for (int i = 0; i < 2; i++) {
-            checkBoxSelect.click();
-            System.out.println(checkBoxSelect.isDisplayed());
-        }
+    //Select From Multiple Menu
+    public static void selectFromMultipleDrop(String locator1, String locator2,String locator3){
+        WebElement element = driver.findElement(By.xpath(locator1));
+        Select drpWrd = new Select(element);
+        drpWrd.selectByValue(locator2);
+        drpWrd.selectByValue(locator3);
     }
+    public void rightClickMouse(String locator){
+        Actions actions = new Actions(driver);
+        WebElement elementLocator = driver.findElement(By.xpath(locator));
+        actions.contextClick(elementLocator).perform();
+    }
+
 
 }
