@@ -1,6 +1,5 @@
 package common;
 
-import com.google.gson.internal.bind.util.ISO8601Utils;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
 import org.apache.commons.io.FileUtils;
@@ -110,7 +109,7 @@ public class WebAPI {
     @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false") String cloudEnvName,
                       @Optional("OS X") String os, @Optional("10") String os_version, @Optional("chrome-options") String browserName, @Optional("34")
-                              String browserVersion, @Optional("https://learn.letskodeit.com//") String url) throws IOException {
+                              String browserVersion, @Optional("https://learn.letskodeit.com/p/practice") String url) throws IOException {
         //System.setProperty("webdriver.chrome.driver", "/Users/peoplentech/eclipse-workspace-March2018/SeleniumProject1/driver/chromedriver");
         if (useCloudEnv == true) {
             if (cloudEnvName.equalsIgnoreCase("browserstack")) {
@@ -127,7 +126,7 @@ public class WebAPI {
         driver.manage().window().maximize();
     }
 
-    public WebDriver getLocalDriver(   @Optional("windows")    String OS, String browserName) {
+    public static WebDriver getLocalDriver(@Optional("windows") String OS, String browserName) {
         if (browserName.equalsIgnoreCase("chrome")) {
             if (OS.equalsIgnoreCase("OS X")) {
                 System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/Windows/chromedriver.exe");
@@ -634,7 +633,7 @@ public class WebAPI {
         drpWrd.selectByValue(locator2);
         drpWrd.selectByValue(locator3);
     }
-    public void rightClickMouse(String locator){
+    public static void rightClickMouse(String locator){
         Actions actions = new Actions(driver);
         WebElement elementLocator = driver.findElement(By.xpath(locator));
         actions.contextClick(elementLocator).perform();

@@ -2,6 +2,7 @@ package stepdefination;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import testhomepage.TestHomePage;
@@ -11,9 +12,7 @@ import java.io.IOException;
 public class TestHomePage_StepDefination extends TestHomePage {
     @Given("I am at amazon.com")
     public void i_am_at_amazon_com() {
-    getLocalDriver("windows","chrome");
-    driver.manage().window().maximize();
-    driver.get("https://www.amazon.com/");
+    bddBrowserOpen();
     }
 
 //Test 1
@@ -77,8 +76,8 @@ public class TestHomePage_StepDefination extends TestHomePage {
     }
 
 //Test 5
-@Given("I am on Amazon Footer page")
-public void i_am_on_Amazon_Footer_page() throws InterruptedException {
+    @Given("I am on Amazon Footer page")
+    public void i_am_on_Amazon_Footer_page() throws InterruptedException {
     // Write code here that turns the phrase above into concrete actions
     testFooterGetText();
     }
@@ -147,16 +146,20 @@ public void i_am_on_Amazon_Footer_page() throws InterruptedException {
         driver.close();
     }
 
-    //TEst 10
+    //Test 10
     @Given("I am Changing to spanish language")
     public void i_am_Changing_to_spanish_language() throws IOException, InterruptedException {
         // Write code here that turns the phrase above into concrete actions
-        testChangeLanguage();
+        getInitElements();
+        setChangeLanguage();
+        getLanguageEspaish().click();
+        sleepFor(2);
     }
 
     @Given("I am taking screenShoot")
-    public void i_am_taking_screenShoot() {
+    public void i_am_taking_screenShoot() throws InterruptedException {
         // Write code here that turns the phrase above into concrete actions
+        getSearchButton().getScreenshotAs(OutputType.FILE);sleepFor(1);
     }
 
     @Then("Browser close")

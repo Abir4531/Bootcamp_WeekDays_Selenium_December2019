@@ -4,6 +4,7 @@ import Home.WebElementPage.WebElementPage;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 
 import java.io.IOException;
@@ -95,14 +96,6 @@ public class HomePage extends WebElementPage {
 
     }
 
-    public static List<String> namelist() {
-        List<String> list = new ArrayList<>();
-        list.add("Robin");
-        list.add("");
-        list.add("Zahid");
-        return list;
-    }
-
     @FindBy(xpath = webElemetIframeSearchBar)
     WebElement iFrameSearchBar;
 
@@ -116,5 +109,11 @@ public class HomePage extends WebElementPage {
     }
 
 
+public static void bddBrowser(){
+    getLocalDriver("windows","chrome");
+    driver.manage().window().maximize();
+    driver.get("https://learn.letskodeit.com/p/practice");
 
+
+}
 }

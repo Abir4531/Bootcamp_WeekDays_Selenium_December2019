@@ -3,6 +3,7 @@ package testhomepage;
 import homepage.pageobject.HomePage;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -72,6 +73,7 @@ public class TestHomePage extends HomePage{
     public void testRightClickMouse() throws InterruptedException {
         getInitElements();
         rightClickMouse(xPAmazonBasics);
+
     }
     @Test(priority = 8 )
     public void testAddFeedback() throws InterruptedException {

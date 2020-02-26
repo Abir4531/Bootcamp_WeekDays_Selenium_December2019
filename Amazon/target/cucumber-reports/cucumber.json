@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9584111800,
+              "duration": 7860294700,
               "status": "passed"
             },
             "line": 3,
@@ -24,7 +24,406 @@
         ]
       },
       {
-        "start_timestamp": "2020-02-23T09:50:11.315Z",
+        "start_timestamp": "2020-02-26T01:46:47.138Z",
+        "line": 6,
+        "name": "",
+        "description": "",
+        "id": "homepage;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10039764800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am Searching iPhone11",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.i_am_Searching_iPhone11()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 373997800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am going back to Home",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.i_am_going_back_to_Home()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Amazon",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7153221300,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am at amazon.com",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.i_am_at_amazon_com()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-26T01:47:05.556Z",
+        "line": 11,
+        "name": "",
+        "description": "",
+        "id": "homepage;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "I am on Today\u0027s Deal page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I am on using Radio button of Amazon Device page",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.i_am_on_using_Radio_button_of_Amazon_Device_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Amazon",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8761505000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am at amazon.com",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.i_am_at_amazon_com()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-26T01:47:12.732Z",
+        "line": 16,
+        "name": "",
+        "description": "",
+        "id": "homepage;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17145667400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I am Hovering mouse on Account\u0026List",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.i_am_Hovering_mouse_on_Account_List()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I am clicking Sign in button",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.i_am_clicking_Sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96558600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "And Inputting email and password",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.and_Inputting_email_and_password()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Amazon",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6682266500,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am at amazon.com",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.i_am_at_amazon_com()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-26T01:47:38.745Z",
+        "line": 22,
+        "name": "",
+        "description": "",
+        "id": "homepage;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 27471366600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I am on Amazon Garage page",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.i_am_on_Amazon_Garage_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2135160600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Hovering one by one Each tab",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.hovering_one_by_one_Each_tab()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Amazon",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6609948200,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am at amazon.com",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.i_am_at_amazon_com()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-26T01:48:15.041Z",
+        "line": 27,
+        "name": "",
+        "description": "",
+        "id": "homepage;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat common.WebAPI.getTextByWebElement(WebAPI.java:593)\r\n\tat homepage.pageobject.HomePage.setHeaderGetText(HomePage.java:90)\r\n\tat testhomepage.TestHomePage.testFooterGetText(TestHomePage.java:64)\r\n\tat stepdefination.TestHomePage_StepDefination.i_am_on_Amazon_Footer_page(TestHomePage_StepDefination.java:82)\r\n\tat ✽.I am on Amazon Footer page(file:///C:/Users/abirh/IdeaProjects/Bootcamp_WeekDays_Selenium_December2019/Amazon/src/test/java/feature/testHomePage.feature:28)\r\n",
+              "duration": 591266400,
+              "status": "failed"
+            },
+            "line": 28,
+            "name": "I am on Amazon Footer page",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.i_am_on_Amazon_Footer_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "Get the text from the Footer Licence",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.get_the_text_from_the_Footer_Licence()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Amazon",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9080683500,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am at amazon.com",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.i_am_at_amazon_com()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-26T01:48:22.256Z",
+        "line": 32,
+        "name": "",
+        "description": "",
+        "id": "homepage;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat common.WebAPI.getTextByWebElement(WebAPI.java:593)\r\n\tat homepage.pageobject.HomePage.setHeaderGetText(HomePage.java:90)\r\n\tat testhomepage.TestHomePage.testFooterGetTextAssertion(TestHomePage.java:70)\r\n\tat stepdefination.TestHomePage_StepDefination.i_am_Scrolling_down(TestHomePage_StepDefination.java:95)\r\n\tat ✽.I am Scrolling down(file:///C:/Users/abirh/IdeaProjects/Bootcamp_WeekDays_Selenium_December2019/Amazon/src/test/java/feature/testHomePage.feature:33)\r\n",
+              "duration": 400945700,
+              "status": "failed"
+            },
+            "line": 33,
+            "name": "I am Scrolling down",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.i_am_Scrolling_down()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "Get text and Assert it Footer Licence",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.get_text_and_Assert_it_Footer_Licence()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Amazon",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10211489500,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am at amazon.com",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.i_am_at_amazon_com()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-26T01:48:31.750Z",
+        "line": 37,
+        "name": "",
+        "description": "",
+        "id": "homepage;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1655592200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Right Click from the mouse",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.right_Click_from_the_mouse()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2608815700,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Then close the browser",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.then_close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Amazon",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7177375800,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am at amazon.com",
+            "match": {
+              "location": "stepdefination.TestHomePage_StepDefination.i_am_at_amazon_com()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-26T01:48:46.233Z",
         "line": 42,
         "name": "",
         "description": "",
@@ -34,8 +433,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[2]/span[2]/span[1]/input[1]\"}\n  (Session info: chrome\u003d80.0.3987.100)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-22KF3O9\u0027, ip: \u0027192.168.73.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\\Users\\abirh\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57114}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: e41ce6b19e91d5bed2ff28bd11df676b\n*** Element info: {Using\u003dxpath, value\u003d/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[2]/span[2]/span[1]/input[1]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy24.click(Unknown Source)\r\n\tat homepage.pageobject.HomePage.setAddFeedbackCancel(HomePage.java:107)\r\n\tat testhomepage.TestHomePage.testAddFeedback(TestHomePage.java:80)\r\n\tat stepdefination.TestHomePage_StepDefination.i_am_Clicking_feedback_button(TestHomePage_StepDefination.java:120)\r\n\tat ✽.I am Clicking feedback button(file:///C:/Users/abirh/IdeaProjects/Bootcamp_WeekDays_Selenium_December2019/Amazon/src/test/java/feature/testHomePage.feature:43)\r\n",
-              "duration": 499166700,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[2]/span[2]/span[1]/input[1]\"}\n  (Session info: chrome\u003d80.0.3987.100)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-22KF3O9\u0027, ip: \u0027192.168.73.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\\Users\\abirh\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59858}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 92fbd3d0f503ce2ab4c13f568d0f863c\n*** Element info: {Using\u003dxpath, value\u003d/html[1]/body[1]/div[3]/div[1]/div[1]/div[1]/div[2]/span[2]/span[1]/input[1]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy24.click(Unknown Source)\r\n\tat homepage.pageobject.HomePage.setAddFeedbackCancel(HomePage.java:107)\r\n\tat testhomepage.TestHomePage.testAddFeedback(TestHomePage.java:82)\r\n\tat stepdefination.TestHomePage_StepDefination.i_am_Clicking_feedback_button(TestHomePage_StepDefination.java:121)\r\n\tat ✽.I am Clicking feedback button(file:///C:/Users/abirh/IdeaProjects/Bootcamp_WeekDays_Selenium_December2019/Amazon/src/test/java/feature/testHomePage.feature:43)\r\n",
+              "duration": 1773889200,
               "status": "failed"
             },
             "line": 43,
@@ -67,7 +466,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5703780300,
+              "duration": 12382543000,
               "status": "passed"
             },
             "line": 3,
@@ -80,7 +479,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-02-23T09:50:21.457Z",
+        "start_timestamp": "2020-02-26T01:48:55.200Z",
         "line": 47,
         "name": "",
         "description": "",
@@ -90,7 +489,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5876023200,
+              "duration": 11841405800,
               "status": "passed"
             },
             "line": 48,
@@ -113,7 +512,7 @@
           },
           {
             "result": {
-              "duration": 68220800,
+              "duration": 106713700,
               "status": "passed"
             },
             "line": 50,
@@ -134,7 +533,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4951909100,
+              "duration": 8134250700,
               "status": "passed"
             },
             "line": 3,
@@ -147,7 +546,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-02-23T09:50:33.113Z",
+        "start_timestamp": "2020-02-26T01:49:19.547Z",
         "line": 53,
         "name": "",
         "description": "",
@@ -157,7 +556,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5436558300,
+              "duration": 6295732400,
               "status": "passed"
             },
             "line": 54,
@@ -169,7 +568,9 @@
           },
           {
             "result": {
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d80.0.3987.100)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-22KF3O9\u0027, ip: \u0027192.168.73.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\\Users\\abirh\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60095}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 9efe931eb2c4cacba9f174b0e15f58a5\n*** Element info: {Using\u003dxpath, value\u003d//div[@class\u003d\u0027nav-search-submit nav-sprite\u0027]//input[@class\u003d\u0027nav-input\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy24.getScreenshotAs(Unknown Source)\r\n\tat stepdefination.TestHomePage_StepDefination.i_am_taking_screenShoot(TestHomePage_StepDefination.java:162)\r\n\tat ✽.I am taking screenShoot(file:///C:/Users/abirh/IdeaProjects/Bootcamp_WeekDays_Selenium_December2019/Amazon/src/test/java/feature/testHomePage.feature:55)\r\n",
+              "duration": 3990100,
+              "status": "failed"
             },
             "line": 55,
             "name": "I am taking screenShoot",
@@ -180,8 +581,7 @@
           },
           {
             "result": {
-              "duration": 2116546100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 56,
             "name": "Browser close",
